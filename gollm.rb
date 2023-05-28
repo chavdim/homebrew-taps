@@ -5,11 +5,11 @@
 class Gollm < Formula
   desc ""
   homepage "https://github.com/chavdim/gollm"
-  version "0.1.5"
+  version "0.2.0"
 
   on_macos do
-    url "https://github.com/chavdim/gollm/releases/download/v0.1.5/gollm_0.1.5_darwin_all.tar.gz"
-    sha256 "f90cf422cbda4cba75d25739cb39e874f21df73ac74724cb170a4a62a5163f30"
+    url "https://github.com/chavdim/gollm/releases/download/v0.2.0/gollm_0.2.0_darwin_all.tar.gz"
+    sha256 "b2e963650678619b1d156ad7f4526bc54aaaac0837e35798d47ccf61dc533f15"
 
     def install
       bin.install "gollm"
@@ -18,16 +18,16 @@ class Gollm < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chavdim/gollm/releases/download/v0.1.5/gollm_0.1.5_linux_arm64.tar.gz"
-      sha256 "125195d2ed9ca1ed3cdb1b8c68131327170bba726ed0a672cc73417151c4c6bd"
+      url "https://github.com/chavdim/gollm/releases/download/v0.2.0/gollm_0.2.0_linux_arm64.tar.gz"
+      sha256 "56c3d8a9829aaa9e1657f52ddadd64be398be8b7b9a943bd6335d7d50bc873d8"
 
       def install
         bin.install "gollm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chavdim/gollm/releases/download/v0.1.5/gollm_0.1.5_linux_amd64.tar.gz"
-      sha256 "a94183cca8b7590d0f5efb4bec27afb083e9b57e580ef1261675e09570ff248d"
+      url "https://github.com/chavdim/gollm/releases/download/v0.2.0/gollm_0.2.0_linux_amd64.tar.gz"
+      sha256 "c35691a8bbf608624e18f28463f46cc903e7ec4f18e1ba288734cb2bb8ec405e"
 
       def install
         bin.install "gollm"
